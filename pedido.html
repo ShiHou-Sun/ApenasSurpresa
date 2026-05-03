@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>"The moon is beautiful today, isn’t it?"</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<div class="overlay"></div>
+
+<div class="container fade">
+  <p>
+    <h4>I honestly don’t know what the future has in store for us, but I would love it if my future self had you by my side. Through pain, sadness, and happiness, I want to stay with you, to support you and love you unconditionally -- just as I always have and always will.</h4>
+    <h2>So I would like to ask you: Would you accept to date me?</h2>
+  </p>
+
+   <div class="buttons">
+  <button id="yes" onclick="aceitou()">Yes!</button>
+  <button id="no" onmouseover="foge()">No</button>
+  </div>
+
+  <script>
+function aceitou() {
+    alert("EU SOU CASADOOOO, YEAAAH!!");
+}
+
+function foge() {
+    let btn = document.getElementById("no");
+    let x = Math.random() * 200 - 100;
+    let y = Math.random() * 200 - 100;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+}
+</script>
